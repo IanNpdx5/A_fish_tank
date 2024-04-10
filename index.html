@@ -2,6 +2,13 @@
 <html> 
   <head>
 	<title>A_fish_tank</title>
+	<style>
+	    #mycanvas {
+	        position: absolute;
+	        top: 0px;
+	        left: 0px;
+	    }
+	</style>
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
   </head>
   <body>
@@ -33,7 +40,7 @@ var makeafish = function(x, y, r, g, b) {
 background(0, 255, 208);
 
 while (n < 100) { 
-    makeafish(random(0,700), random(0, 700), random(0, 255), random(0, 255), random(0,255));
+    makeafish(random(0, window.innerWidth), random(0, window.innerHeight), random(0, 255), random(0, 255), random(0,255));
     n++;
 }};
 }};
