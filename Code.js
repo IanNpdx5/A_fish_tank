@@ -26,7 +26,5 @@ while (n < 100) {
 
   // Get the canvas that ProcessingJS will use
   var canvas = document.getElementById("mycanvas");
-  
-  var $canvas = $("#mycanvas");
   // Pass the function to ProcessingJS constructor
   var processingInstance = new Processing(canvas, programCode);
